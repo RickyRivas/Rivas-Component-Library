@@ -5,5 +5,35 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        &>div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            p {
+                margin-bottom: $margin-md;
+                color: $text-color;
+            }
+            ul {
+                list-style: none;
+            }
+        }
     } 
+    // Buttons {
+         #section{
+             position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: $margin-lg;
+            &>div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+        }
 }

@@ -18,8 +18,9 @@
 
 // 5. Components
 @import
-  'components/button';
-  @import 'abstracts/dark-mode';
+  'components/button',
+   'abstracts/dark-mode',
+   'components/modals';
 
 // 6. Page-specific styles
 @import

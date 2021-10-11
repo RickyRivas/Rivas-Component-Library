@@ -26,4 +26,22 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('theme', theme)
 })
 
-
+// Modal Uno 
+const modalUno = document.querySelector('.modal-uno-base');
+const modalTriggerUno = document.querySelector('#modal-trigger-uno');
+const closeModalUno = document.querySelector('#close-modal-uno');
+const modalUnoOverlay = document.querySelector('.modal-overlay');
+const body = document.querySelector('body');
+modalUno.style.display = 'none';
+modalTriggerUno.addEventListener('click', () => {
+    modalUno.style.display = 'block';
+    body.classList.toggle('body-fixed');
+});
+modalUnoOverlay.addEventListener('click', () => {
+    modalUno.style.display = 'none';
+     body.classList.remove('body-fixed');
+})
+closeModalUno.addEventListener('click', () => {
+    modalUno.style.display = 'none'
+     body.classList.remove('body-fixed');
+});
