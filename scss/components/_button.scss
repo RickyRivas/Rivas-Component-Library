@@ -1,0 +1,17 @@
+// Standard Button
+.btn {
+    cursor: pointer;
+    padding: 10px 30px;
+    background-color: black;
+    border: 0;
+    color: white;
+    &:hover{
+        opacity: .8;
+    }
+}
+// Standard Icons
+.standard-icon {
+    width: 2em;
+    height: 2em;
+    margin-right: 1em;
+}
