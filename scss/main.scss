@@ -5,10 +5,8 @@
   'abstracts/variables',
   'abstracts/functions',
   'abstracts/mixins';
-// Color Scheme
-@import 'abstracts/color-scheme';
 
-// 3. Base stuff
+// 3. Base stuff                  
 @import
   'base/base',
   'base/fonts';
@@ -21,7 +19,7 @@
 // 5. Components
 @import
   'components/button';
-  @import 'components/dark-mode';
+  @import 'abstracts/dark-mode';
 
 // 6. Page-specific styles
 @import
