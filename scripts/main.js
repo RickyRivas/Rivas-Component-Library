@@ -1,10 +1,20 @@
-// Navigation 
+// Navigation 1
+const body = document.querySelector('body');
 const burger = document.querySelector(".hamburger");
+const navOverlay = document.querySelector('.navlinks-overlay');
 const nav = document.querySelector(".nav-links");
 
 burger.addEventListener('click', () => {
   nav.classList.toggle('is-active');
-  burger.classList.toggle('is-active');
+    burger.classList.toggle('is-active');
+    body.classList.toggle('body-fixed');
+    navOverlay.classList.toggle('is-active');
+})
+navOverlay.addEventListener('click', () => {
+    nav.classList.toggle('is-active');
+    burger.classList.toggle('is-active');
+    body.classList.toggle('body-fixed');
+    navOverlay.classList.toggle('is-active');
 })
 // Color theme toggle
 const themeToggle = document.querySelector('.theme-toggle');
@@ -26,12 +36,11 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('theme', theme)
 })
 
-// Modal Uno 
+// Popup Modal
 const modalUno = document.querySelector('.modal-uno-base');
 const modalTriggerUno = document.querySelector('#modal-trigger-uno');
 const closeModalUno = document.querySelector('#close-modal-uno');
 const modalUnoOverlay = document.querySelector('.modal-overlay');
-const body = document.querySelector('body');
 modalUno.style.display = 'none';
 modalTriggerUno.addEventListener('click', () => {
     modalUno.style.display = 'block';
